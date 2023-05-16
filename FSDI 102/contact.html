@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/mystyles.css" />
+    <title>Contact</title>
+  </head>
+  <body>
+    <header class="contact-header">
+      <div class="site-bar">
+        <img src="images/logo.svg" alt="" />
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <h2>Contact</h2>
+      <p class="contact-text">Contact for page</p>
+      <fieldset>
+        <legend>Personal information</legend>
+        <label for="fname">Name:</label>
+        <input
+          class="input-control"
+          type="text"
+          id="fname"
+          placeholder="Type your name"
+        />
+
+        <label for="uemail">Email:</label>
+        <input
+          class="input-control"
+          type="email"
+          id="uemail"
+          placeholder="Type your email"
+          required
+        />
+
+        <label for="phone">Phone:</label>
+        <input
+          class="input-control"
+          type="number"
+          id="phone"
+          placeholder="Type your cellphone"
+          required
+        />
+
+        <label for="msg">Message:</label>
+        <textarea
+          class="input-control"
+          name="msg"
+          id="msg"
+          cols="30"
+          rows="10"
+        ></textarea>
+      </fieldset>
+      <!--add the fieldset for productps information-->
+      <legend>Product Information</legend>
+      <fieldset>
+        <label for="msg">Type</label>
+        <select>
+          <option value="luxury">Luxury House</option>
+          <option value="conduminiums">Condominiums</option>
+          <option value="penthouses">Penthouses</option>
+        </select>
+        <label for="msg">Number</label>
+        <input type="number" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Contact Information</legend>
+        <input type="radio" name="contact" /> <label for="phone">Phone</label>
+        <input type="radio" name="contact" /> <label for="phone">Email</label>
+        <label for="date">Date:</label>
+        <input type="date" name="date" id="date" />
+        <label for="hours">Hours:</label>
+        <input type="time" />
+      </fieldset>
+      <button>Send</button>
+    </main>
+    <footer></footer>
+  </body>
+</html>

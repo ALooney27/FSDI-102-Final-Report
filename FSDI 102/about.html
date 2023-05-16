@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/mystyles.css" />
+    <title>About</title>
+  </head>
+  <body>
+    <header class="contact-header">
+      <div class="site-bar">
+        <img src="images/logo.svg" alt="" />
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <h2>About</h2>
+      <p class="contact-text">About our company</p>
+      <fieldset>
+        <legend>Company information</legend>
+        <label for="fname">Name:</label>
+        <h3>Company Real Estate</h3>
+
+        <label for="uemail">Email:</label>
+        <h3>companyrealestate@company.com</h3>
+
+        <label for="phone">Phone:</label>
+        <h3>1-619-123-4567</h3>
+
+        <label for="msg">Message:</label>
+        <h4>Proudly serving our local community since yesterday.</h4>
+      </fieldset>
+      <!--add the fieldset for productps information-->
+      <legend>Product Information</legend>
+      <fieldset>
+        <label for="msg">Type</label>
+        <select>
+          <option value="luxury">Luxury House</option>
+          <option value="conduminiums">Condominiums</option>
+          <option value="penthouses">Penthouses</option>
+        </select>
+        <label for="msg">Bedrooms</label>
+        <select>
+          <option value="luxury">2</option>
+          <option value="conduminiums">4</option>
+          <option value="penthouses">6</option>
+        </select>
+        <label for="msg">Price</label>
+        <select>
+          <option value="luxury">$2,000,000-$4,000,000</option>
+          <option value="conduminiums">$5,000,000-$7,000,000</option>
+          <option value="penthouses">$8,000,000-$10,000,000</option>
+        </select>
+        <label for="msg">Number</label>
+        <input type="number" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Contact Information</legend>
+        <input type="radio" name="contact" /> <label for="phone">Phone</label>
+        <input type="radio" name="contact" /> <label for="phone">Email</label>
+        <label for="date">Date:</label>
+        <input type="date" name="date" id="date" />
+        <label for="hours">Hours:</label>
+        <input type="time" />
+      </fieldset>
+      <button>Send</button>
+    </main>
+    <footer></footer>
+  </body>
+</html>
